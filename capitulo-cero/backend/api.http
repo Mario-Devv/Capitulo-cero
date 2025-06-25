@@ -6,7 +6,17 @@ POST http://localhost:3000/users/register
 Content-Type: application/json
 
 {
-    "email": "mrkraker@gmail.com",
-    "username": "Mario Oltraa",
-    "password": "77776666"
+    "email": "lolitoFdf@hotmail.com",
+    "username": "Jesus cree en ti",
+    "password": "chupachupsdementa"
+}
+
+###LOGIN Users
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email": "lolitoFdf@hotmail.com",
+    "username": "Jesus cree en ti",
+    "password": "chupachupsdementa"    
 }
