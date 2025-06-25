@@ -1,0 +1,12 @@
+### API Endpoints
+### Get Users
+GET http://localhost:3000/users/
+###Send Users
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+    "email": "mrkraker@gmail.com",
+    "username": "Mario Oltraa",
+    "password": "77776666"
+}

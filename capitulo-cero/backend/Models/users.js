@@ -1,16 +1,9 @@
-import { readJSON } from '../utils/utils.js'
-const users = readJSON('../user.json')
+import mongoose from 'mongoose'
 
-export class userModel {
-  static getAll () {
-    return users
-  }
+const userSchema = new mongoose.Schema({
+  email: { type: String, required: true, unique: true },
+  username: { type: String, required: true, unique: true },
+  password: { type: String, required: true }
+})
 
-  static getByID ({ id }) {
-    return users.find(user => user.id === Number(id))
-  }
-
-  static getByUserName ({ username }) {
-    return users.find(user => user.username === username)
-  }
-}
+export const UserModel = mongoose.model('User', userSchema)
