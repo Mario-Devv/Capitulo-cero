@@ -17,7 +17,7 @@ Content-Type: application/json
 
 {
     "email": "lolitoFdf@hotmail.com",
-    "username": "Jesus cree en ti",
+    "username": "Jesus",
     "password": "chupachupsdementa"    
 }
 
@@ -29,4 +29,12 @@ Content-Type: application/json
     "email": "lolitoFdf@hotmail.com",
     "username": "Jesus",
     "password": "chupachupsdementa"
+}
+### Delete user
+DELETE http://localhost:3000/users/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWMyNjc3ZTJiMTExMTMxNjJkOWE0ZSIsImlhdCI6MTc1MDkzMDE1OCwiZXhwIjoxNzUwOTMzNzU4fQ.P5waSlv0wzAsUyPGBo7ibUb-QbEaXmOQi2rciRrAkeo
+
+{
+    "email": "lolitoFdf@hotmail.com"
 }

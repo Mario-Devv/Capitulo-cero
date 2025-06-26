@@ -11,3 +11,4 @@ userRouter.post('/login', userController.login)
 userRouter.post('/register', validateSchema, userController.mongoCreateUser)
 
 userRouter.patch('/me', verifyToken, userController.updateUser)
+userRouter.delete('/me', verifyToken, userController.deleteUser)
