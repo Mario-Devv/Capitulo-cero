@@ -1,4 +1,4 @@
-### API Endpoints
+### API Endpoints, THIS IS ONLY FOR TESTING
 ### Get Users
 GET http://localhost:3000/users/
 ###Send Users
@@ -24,7 +24,6 @@ Content-Type: application/json
 ### Update user
 PATCH  http://localhost:3000/users/me
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWMyNjc3ZTJiMTExMTMxNjJkOWE0ZSIsImlhdCI6MTc1MDkyNjQ5NSwiZXhwIjoxNzUwOTMwMDk1fQ.gwqx57T1lpjRnjhBqn9v8ypmWnXCum-ZHeNWlIju3Gg
 
 {
     "email": "lolitoFdf@hotmail.com",
