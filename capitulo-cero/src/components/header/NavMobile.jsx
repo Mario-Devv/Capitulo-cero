@@ -1,4 +1,4 @@
-import { BurgerBTN, CloseBTN, Lupa } from "../../assets/icons"
+import { BurgerBTN, CloseBTN, Lupa } from "../../assets/icons/header"
 
 export const NavMobile = ({ isOpen, setIsOpen }) => {
     const QueryBooks = () => {
@@ -36,9 +36,9 @@ export const NavMobile = ({ isOpen, setIsOpen }) => {
     }
 
     return (
-        <div className='flex sm:hidden'>
+        <div className='flex sm:hidden z-20'>
             <ToggleBurger />
-            <nav className={`fixed right-0 top-0 flex items-center w-full h-64 transform transition-all duration-500 ease-in-out bg-[#FFF8F0] -z-10
+            <nav className={`fixed right-0 top-0 flex items-center w-full h-64 transform transition-all duration-500 ease-in-out bg-[#FFF8F0] 
             ${isOpen ? 'translate-y-16 ' : '-translate-y-full'}`}>
                 <ul className='w-full h-full flex flex-col justify-center px-5 text-sm text-[#6C4A09]'>
                     <QueryBooks />
