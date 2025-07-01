@@ -3,7 +3,7 @@ import { People, Lupa } from '../../assets/icons/sections/welcome/icons.js'
 
 export const WelcomeMobile = () => {
     return (
-        <section className="min-h-[110dvh] bg-gradient-to-r from-[#F3E8DD] to-[#FFF8F0] sm:hidden flex flex-col pt-20 px-4 ">
+        <section className="bg-gradient-to-r from-[#F3E8DD] to-[#FFF8F0] sm:hidden flex flex-col pt-20 pb-4 px-4 ">
 
             <div>
                 <h2 className='font-bold text-2xl flex flex-col justify-center mb-1 text-[#3E2F1C] z-50'>
