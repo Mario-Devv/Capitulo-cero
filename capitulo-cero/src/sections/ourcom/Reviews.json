@@ -1,0 +1,87 @@
+[
+  {
+    "bookTitle": "El guardián invisible",
+    "reviews": [
+      {
+        "name": "Laura M. Torres",
+        "avatar": "https://i.pravatar.cc/150?img=5",
+        "rating": 4,
+        "comment": "Una novela absorbente con tintes oscuros. Me encantó la ambientación en los bosques del Baztán. Lo leí en dos días."
+      },
+      {
+        "name": "Andrés Ríos",
+        "avatar": "https://i.pravatar.cc/150?img=13",
+        "rating": 3,
+        "comment": "La historia es interesante, pero me costó conectar con algunos personajes. Aun así, vale la pena por la atmósfera."
+      }
+    ]
+  },
+  {
+    "bookTitle": "Cien años de soledad",
+    "reviews": [
+      {
+        "name": "Carla Jiménez",
+        "avatar": "https://i.pravatar.cc/150?img=32",
+        "rating": 5,
+        "comment": "Un viaje literario que no se parece a nada. García Márquez es un genio de la narrativa. Lo he releído tres veces."
+      },
+      {
+        "name": "Samuel Vega",
+        "avatar": "https://i.pravatar.cc/150?img=18",
+        "rating": 4,
+        "comment": "Al principio es denso, pero cuando te atrapa, no te suelta. Lo recomiendo con paciencia y atención."
+      }
+    ]
+  },
+  {
+    "bookTitle": "1984",
+    "reviews": [
+      {
+        "name": "Iván Delgado",
+        "avatar": "https://i.pravatar.cc/150?img=25",
+        "rating": 5,
+        "comment": "Impactante, actual, y escalofriante. Orwell predijo más de lo que imaginamos. Un clásico obligatorio."
+      },
+      {
+        "name": "Patricia Luna",
+        "avatar": "https://i.pravatar.cc/150?img=47",
+        "rating": 4,
+        "comment": "Me hizo cuestionarme muchas cosas sobre el control y la libertad. La historia es poderosa, aunque algo fría por momentos."
+      }
+    ]
+  },
+  {
+    "bookTitle": "La sombra del viento",
+    "reviews": [
+      {
+        "name": "Marta Olivares",
+        "avatar": "https://i.pravatar.cc/150?img=10",
+        "rating": 5,
+        "comment": "Una obra mágica. Los personajes, la trama y ese aire gótico de Barcelona... simplemente inolvidable."
+      },
+      {
+        "name": "David Herrero",
+        "avatar": "https://i.pravatar.cc/150?img=23",
+        "rating": 4,
+        "comment": "Zafón tiene un estilo poético que me atrapó desde la primera página. Lo recomiendo a quien le guste la literatura con alma."
+      }
+    ]
+  },
+  {
+    "bookTitle": "El nombre del viento",
+    "reviews": [
+      {
+        "name": "Elena Castaño",
+        "avatar": "https://i.pravatar.cc/150?img=45",
+        "rating": 5,
+        "comment": "Kvothe es uno de los personajes más fascinantes que he leído. Me encantó la mezcla de fantasía y música."
+      },
+      {
+        "name": "Ricardo Navas",
+        "avatar": "https://i.pravatar.cc/150?img=38",
+        "rating": 3,
+        "comment": "Buen comienzo de saga, pero esperaba más acción. Aun así, Rothfuss escribe muy bien."
+      }
+    ]
+  }
+]
