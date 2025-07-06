@@ -1,6 +1,8 @@
 import './App.css'
 import { Header } from './components/header/Header.jsx'
 import { Characteristics } from './sections/characteristics/Characteristics.jsx'
+import { OurCommunity } from './sections/ourcom/hooks/OurCommunity.jsx'
+import { PopularBooks } from './sections/Popular_Books/PopularBooks.jsx'
 import { Welcome } from './sections/welcome/Welcome.jsx'
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
       <main>
         <Welcome />
         <Characteristics />
+        <PopularBooks />
+        <OurCommunity />
       </main>
     </>
   )

@@ -1,10 +1,7 @@
 import { Data } from './Data.js'
 
 export const CharacteristicsJson = () => {
-
-
     return (
-
         Data.map(e => (
             <div className="bg-[#FFFFFF] w-full h-60 rounded-xl shadow shadow-black/50 flex flex-col p-4 gap-2">
                 <span className="block">
