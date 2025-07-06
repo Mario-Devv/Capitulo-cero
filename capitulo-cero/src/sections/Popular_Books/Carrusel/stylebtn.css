@@ -1,0 +1,19 @@
+.swiper-button-prev,
+.swiper-button-next {
+
+    border: 1px solid #D9822B;
+    border-radius: 999px;
+    background-color: #FFFFFF;
+    color: #6C4A09;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 24px;
+    font-weight: bold;
+}
