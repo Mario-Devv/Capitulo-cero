@@ -1,5 +1,5 @@
 import Reviews from './Reviews.json'
-import { useComments } from './useComments'
+import { useComments } from './hooks/useComments.jsx'
 
 
 export const ShowReviews = () => {
