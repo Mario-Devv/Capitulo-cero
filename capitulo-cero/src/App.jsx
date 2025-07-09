@@ -1,4 +1,5 @@
 import './App.css'
+import { Footer } from './components/footer/Footer.jsx'
 import { Header } from './components/header/Header.jsx'
 import { Characteristics } from './sections/characteristics/Characteristics.jsx'
 import { OurCommunity } from './sections/ourcom/OurCommunity.jsx'
@@ -17,6 +18,7 @@ function App() {
         <PopularBooks />
         <OurCommunity />
       </main>
+      <Footer />
     </>
   )
 }
