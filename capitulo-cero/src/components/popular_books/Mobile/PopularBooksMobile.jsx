@@ -1,4 +1,4 @@
-import { BooksCarruselMobile } from "./Carrusel/CarruselMobile.jsx"
+import { BooksCarruselMobile } from "./carrusel/CarruselMobile.jsx"
 
 export const PopularBooksMobile = () => {
     return (

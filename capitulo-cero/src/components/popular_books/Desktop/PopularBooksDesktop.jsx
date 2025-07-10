@@ -1,4 +1,4 @@
-import { BooksCarruselDesktop } from "./Carrusel/CarruselDesktop.jsx"
+import { BooksCarruselDesktop } from "./carrusel/CarruselDesktop.jsx"
 
 export const PopularBooksDesktop = () => {
     return (

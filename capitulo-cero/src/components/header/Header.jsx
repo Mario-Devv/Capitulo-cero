@@ -1,5 +1,5 @@
-import { HeaderDesktop } from "./HeaderDesktop.jsx"
-import { HeaderMobile } from "./HeaderMobile.jsx"
+import { HeaderDesktop } from "./Desktop/HeaderDesktop.jsx"
+import { HeaderMobile } from "./Mobile/HeaderMobile.jsx"
 
 
 

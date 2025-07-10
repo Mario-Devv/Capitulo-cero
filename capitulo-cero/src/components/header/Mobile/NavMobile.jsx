@@ -1,4 +1,4 @@
-import { BurgerBTN, CloseBTN, Lupa } from "../../assets/icons/header"
+import { BurgerBTN, CloseBTN, Lupa } from "../../../assets/icons/header"
 
 export const NavMobile = ({ isOpen, setIsOpen }) => {
     const QueryBooks = () => {

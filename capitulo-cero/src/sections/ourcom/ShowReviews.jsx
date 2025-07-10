@@ -1,4 +1,4 @@
-import Reviews from './Reviews.json'
+import Reviews from '../../data/ourcom/Reviews.json'
 import { useComments } from '../../hooks/sections/ourcom/useComments.jsx'
 
 

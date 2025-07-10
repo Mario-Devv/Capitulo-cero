@@ -1,5 +1,5 @@
-import { Book1, Book2, Book3 } from '../../assets/Img/sections/welcome/Books.js'
-import { People, Lupa } from '../../assets/icons/sections/welcome/icons.js'
+import { Book1, Book2, Book3 } from '../../../assets/Img/sections/welcome/Books.js'
+import { People, Lupa } from '../../../assets/icons/sections/welcome/icons.js'
 
 export const WelcomeMobile = () => {
     return (
