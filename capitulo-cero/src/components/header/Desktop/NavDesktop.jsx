@@ -1,4 +1,4 @@
-import { Lupa } from "../../assets/icons/header"
+import { Lupa } from "../../../assets/icons/header/index.js"
 
 const QueryBooks = () => {
     return (

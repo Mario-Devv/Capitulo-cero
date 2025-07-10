@@ -1,6 +1,6 @@
-import { Lupa } from "../../assets/icons/header"
-import { People } from "../../assets/icons/sections/welcome/icons"
-import { Book1, Book2, Book3 } from "../../assets/Img/sections/welcome/Books"
+import { Lupa } from "../../../assets/icons/header/index.js"
+import { People } from "../../../assets/icons/sections/welcome/icons"
+import { Book1, Book2, Book3 } from "../../../assets/Img/sections/welcome/Books"
 
 export const WelcomeDesktop = () => {
     return (

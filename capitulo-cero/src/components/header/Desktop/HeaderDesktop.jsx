@@ -1,5 +1,5 @@
-import { Book } from "../../assets/icons/header"
-import { NavList } from "./NavList"
+import { Book } from "../../../assets/icons/header"
+import { NavList } from "../NavList"
 
 export const HeaderDesktop = () => {
     return (

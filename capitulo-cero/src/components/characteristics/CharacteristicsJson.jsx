@@ -1,4 +1,5 @@
-import { Data } from './Data.js'
+import { Data } from "../../data/characteristics/Data.js"
+
 
 export const CharacteristicsJson = () => {
     return (

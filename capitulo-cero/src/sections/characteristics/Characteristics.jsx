@@ -1,6 +1,8 @@
+import { CharacteristicsDesktop } from "../../components/characteristics/Desktop/CharacteristicsDesktop"
+import { CharacteristicsMobile } from "../../components/characteristics/Mobile/CharacteristicsMobile"
 
-import { CharacteristicsDesktop } from './CharacteristicsDesktop.jsx'
-import { CharacteristicsMobile } from './CharacteristicsMobile.jsx'
+
+
 export const Characteristics = () => {
 
     return (

@@ -1,4 +1,4 @@
-import Books from '../Books.json'
+import Books from '../../../../data/popular_books/Books.json'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, FreeMode, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
@@ -6,8 +6,8 @@ import 'swiper/css/autoplay';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
-import './stylebtn.css'
-import { Save, Start } from '../../../assets/icons/sections/popularBooks';
+import '../../Carrusel/stylebtn.css'
+import { Save, Start } from '../../../../assets/icons/sections/popularBooks';
 
 export const BooksCarruselDesktop = () => {
     return (
