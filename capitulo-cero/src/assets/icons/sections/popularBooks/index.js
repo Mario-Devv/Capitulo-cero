@@ -1,4 +1,4 @@
 import Start from './star.svg'
-import Save from './Savebtn.svg'
+import Save from './savebtn.svg'
 
 export { Start, Save }

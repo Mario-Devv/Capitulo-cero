@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import { BurgerBTN, CloseBTN, Lupa } from "../../../assets/icons/header"
 
 export const NavMobile = ({ isOpen, setIsOpen }) => {
+    const navigate = useNavigate()
+
     const QueryBooks = () => {
         return (
             <div className='w-full sm:w-1/4 h-10 rounded-2xl flex items-center  sm:text-sm'>
@@ -9,7 +12,7 @@ export const NavMobile = ({ isOpen, setIsOpen }) => {
             </div>
         )
     }
-    
+
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
@@ -35,6 +38,10 @@ export const NavMobile = ({ isOpen, setIsOpen }) => {
         )
     }
 
+    const goToLogin = () => { 
+        navigate('/login')
+    }
+
     return (
         <div className='flex sm:hidden z-20'>
             <ToggleBurger />
@@ -46,7 +53,7 @@ export const NavMobile = ({ isOpen, setIsOpen }) => {
                     <li className='grow flex items-center' >Libros</li>
                     <li className='grow flex items-center'>Autores</li>
 
-                    <button className='flex grow items-center justify-center bg-[#D9822B]
+                    <button onClick={goToLogin} className='flex grow items-center justify-center bg-[#D9822B]
                     rounded-2xl text-[#FFFFFF] mb-4'>
                         Iniciar sesión
                     </button>
