@@ -6,7 +6,7 @@ import { OurCommunity } from './sections/ourcom/OurCommunity.jsx'
 import { PopularBooks } from './sections/Popular_Books/PopularBooks.jsx'
 import { Welcome } from './sections/welcome/Welcome.jsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { LoginUsers } from './components/login/Login.jsx'
+import { LoginUsers } from './components/login/mobile/Login.jsx'
 
 function LandingLayout() {
   
