@@ -6,9 +6,9 @@ POST http://localhost:3000/users/register
 Content-Type: application/json
 
 {
-    "email": "mariano@hotmail.com",
-    "username": "mariano",
-    "password": "123456789"
+    "email": "mariano@hotmail.es",
+    "username": "Mario ",
+    "password": "PeterPan111"
 }
 
 ###LOGIN Users

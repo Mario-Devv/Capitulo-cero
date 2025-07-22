@@ -21,7 +21,7 @@ export class userController {
     }
   }
 
-  static async mongoCreateUser (req, res) {
+  static async mongoCreateUser(req, res) {
     try {
       const { email, username, password } = req.body
 
@@ -47,7 +47,7 @@ export class userController {
     }
   }
 
-  static async login (req, res) {
+  static async login(req, res) {
     try {
       const { email, password } = req.body
 
@@ -77,7 +77,11 @@ export class userController {
         }
       })
     } catch (error) {
-      res.status(500).json({ message: 'Error logging in', error })
+      res.status(500).json(
+        {
+          message: 'Email o contraseña incorrectos',
+          error
+        })
     }
   }
 
