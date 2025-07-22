@@ -6,7 +6,9 @@ import { OurCommunity } from './sections/ourcom/OurCommunity.jsx'
 import { PopularBooks } from './sections/Popular_Books/PopularBooks.jsx'
 import { Welcome } from './sections/welcome/Welcome.jsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { LoginUsers } from './components/login/mobile/Login.jsx'
+import { Dashboard } from './components/dashboard/Dashboard.jsx'
+import { Login } from './sections/login/Login.jsx'
+import { Register } from './sections/register/Register.jsx'
 
 function LandingLayout() {
   
@@ -33,7 +35,9 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<LandingLayout />}/>
-        <Route path='/login' element={<LoginUsers />}/>
+        <Route path='/login' element={<Login />}/>
+        <Route path='/register' element={<Register />}/>
+        <Route path='/dashboard' element={<Dashboard />}/>
       </Routes>
     </Router>
   )

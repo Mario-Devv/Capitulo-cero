@@ -1,25 +1,19 @@
 import { useState } from "react"
-import { Book } from "../../../assets/icons/header"
-import { useNavigate } from 'react-router-dom'
-import { Toaster } from 'react-hot-toast'
-import { useLogin } from "../../../hooks/sections/login/useHandleSubmitLogin"
+import { useRegisterUser } from "../../hooks/sections/register/Register"
+import { Book } from "../../assets/icons/header"
+import { Toaster } from "react-hot-toast"
 
-export const LoginUsersMobile = () => {
+export const RegisterUserMobile = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
-    const navigate = useNavigate()
 
-    const goToRegister = () => {
-        navigate('/register')
-    }
+    const { register } = useRegisterUser()
 
-    const { login } = useLogin()
-
-    const handleSubmit = async (e) => { 
+    const handleSubmit = async (e) => {
         e.preventDefault()
 
-        await login (email, password)
+        await register(email, password)
     }
 
 
@@ -64,10 +58,11 @@ export const LoginUsersMobile = () => {
                     </button>
                 </div>
 
-                <button onClick={goToRegister}>¿Nuevo por aquí? <span className="text-[#D9822B] font-bold ">¡Registrate, es gratis!</span></button>
+                {/* <button onClick={goToRegister}>¿Nuevo por aquí? <span className="text-[#D9822B] font-bold ">¡Registrate, es gratis!</span></button> */}
 
                 <Toaster position="top-center" reverseOrder={false} />
             </form>
         </section>
     )
+
 }
