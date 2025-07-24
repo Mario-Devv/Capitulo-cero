@@ -9,9 +9,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Dashboard } from './components/dashboard/Dashboard.jsx'
 import { Login } from './sections/login/Login.jsx'
 import { Register } from './sections/register/Register.jsx'
+import { Toaster } from 'react-hot-toast'
 
 function LandingLayout() {
-  
+
   return (
     <>
       {/* Components */}
@@ -33,11 +34,12 @@ function App() {
 
   return (
     <Router>
+      <Toaster position="top-center" />
       <Routes>
-        <Route path='/' element={<LandingLayout />}/>
-        <Route path='/login' element={<Login />}/>
-        <Route path='/register' element={<Register />}/>
-        <Route path='/dashboard' element={<Dashboard />}/>
+        <Route path='/' element={<LandingLayout />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/dashboard' element={<Dashboard />} />
       </Routes>
     </Router>
   )

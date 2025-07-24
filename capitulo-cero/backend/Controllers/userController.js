@@ -3,7 +3,7 @@ import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 
 export class userController {
-  static async getAllUser (req, res) {
+  static async getAllUser(req, res) {
     try {
       // const { password } = req.body
       const users = await UserModel.find()
@@ -29,9 +29,14 @@ export class userController {
       const hashedPassword = await bcrypt.hash(password, saltRounds)
 
       const existingUser = await UserModel.findOne({ email })
+      const existingName = await UserModel.findOne({ username })
 
       if (existingUser) {
         return res.status(409).json({ message: 'User already exists' })
+      }
+
+      if (existingName) {
+        return res.status(409).json({ message: 'Nombre de usuario ya en uso' })
       }
 
       const newUser = new UserModel({ email, username, password: hashedPassword })
@@ -52,11 +57,12 @@ export class userController {
       const { email, password } = req.body
 
       const user = await UserModel.findOne({ email })
-      const comparedPassword = await bcrypt.compare(password, user.password)
 
       if (!user) {
         return res.status(404).json({ message: 'Usuario no encontrado' })
       }
+
+      const comparedPassword = await bcrypt.compare(password, user.password)
 
       if (!comparedPassword) {
         return res.status(401).json({ message: 'Contraseña incorrecta' })
@@ -85,7 +91,7 @@ export class userController {
     }
   }
 
-  static async updateUser (req, res) {
+  static async updateUser(req, res) {
     try {
       const { username, email } = req.body
 
@@ -105,7 +111,7 @@ export class userController {
     }
   }
 
-  static async deleteUser (req, res) {
+  static async deleteUser(req, res) {
     try {
       const user = await UserModel.findByIdAndDelete(req.userId)
 

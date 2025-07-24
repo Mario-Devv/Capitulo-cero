@@ -1,19 +1,19 @@
 import { useState } from "react"
-import { useRegisterUser } from "../../hooks/sections/register/Register"
-import { Book } from "../../assets/icons/header"
+import { useRegisterUser } from "../../../hooks/sections/register/Register"
+import { Book } from "../../../assets/icons/header"
 import { Toaster } from "react-hot-toast"
 
 export const RegisterUserMobile = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-
+    const [user, setUser] = useState('')
 
     const { register } = useRegisterUser()
 
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        await register(email, password)
+        await register(email, user, password)
     }
 
 
@@ -30,10 +30,21 @@ export const RegisterUserMobile = () => {
                         <label className="text-[#3E2F1C] font-bold text-xl" htmlFor="email">Introduce tu email</label>
                         <input className="rounded-sm px-4 py-2 border border-[#D9822B]"
                             type="email"
-                            name="email"
-                            id="email"
+                            name="emailMobile"
+                            id="emailMobile"
                             placeholder="example@gmail.com"
                             onChange={(e) => setEmail(e.target.value)}
+                        />
+                    </div>
+
+                    <div className="flex flex-col">
+                        <label className="text-[#3E2F1C] font-bold text-xl" htmlFor="user">Introduce un nombre de usuario</label>
+                        <input className="rounded-sm px-4 py-2 border border-[#D9822B]"
+                            type="text"
+                            name="userMobile"
+                            id="userMobile"
+                            placeholder="Ejemplo222"
+                            onChange={(e) => setUser(e.target.value)}
                         />
                     </div>
 
@@ -41,8 +52,8 @@ export const RegisterUserMobile = () => {
                         <label className="text-[#3E2F1C] font-bold text-xl" htmlFor="password">Introduce tu contraseña</label>
                         <input className="rounded-sm px-4 py-2 border border-[#D9822B]"
                             type="password"
-                            name="password"
-                            id="password"
+                            name="passwordMobile"
+                            id="passwordMobile"
                             onChange={(e) => setPassword(e.target.value)}
                         />
                     </div>
@@ -50,17 +61,11 @@ export const RegisterUserMobile = () => {
 
                 <div className="flex flex-col gap-2 mb-4">
                     <button className="bg-[#D9822B] p-4 rounded-xl text-[#FFFFFF]">
-                        Iniciar sesión
-                    </button>
-
-                    <button className="bg-[#FFF8F0] border border-[#D9822B] p-4 rounded-xl text-[#6C4A09]">
-                        ¿Olvidaste tu contraseña?
+                        Registrarse
                     </button>
                 </div>
 
                 {/* <button onClick={goToRegister}>¿Nuevo por aquí? <span className="text-[#D9822B] font-bold ">¡Registrate, es gratis!</span></button> */}
-
-                <Toaster position="top-center" reverseOrder={false} />
             </form>
         </section>
     )
