@@ -33,22 +33,22 @@ export const LoginUsersMobile = () => {
 
                 <div className="flex flex-col gap-4 mb-4 text-[#6C4A09]">
                     <div className="flex flex-col">
-                        <label className="text-[#3E2F1C] font-bold text-xl" htmlFor="email">Introduce tu email</label>
+                        <label className="text-[#3E2F1C] font-bold text-xl" htmlFor="emailMobile">Introduce tu email</label>
                         <input className="rounded-sm px-4 py-2 border border-[#D9822B]"
                             type="email"
-                            name="email"
-                            id="email"
+                            name="emailMobile"
+                            id="emailMobile"
                             placeholder="example@gmail.com"
                             onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
 
                     <div className="flex flex-col">
-                        <label className="text-[#3E2F1C] font-bold text-xl" htmlFor="password">Introduce tu contraseña</label>
+                        <label className="text-[#3E2F1C] font-bold text-xl" htmlFor="passwordMobile">Introduce tu contraseña</label>
                         <input className="rounded-sm px-4 py-2 border border-[#D9822B]"
                             type="password"
-                            name="password"
-                            id="password"
+                            name="passwordMobile"
+                            id="passwordMobile"
                             onChange={(e) => setPassword(e.target.value)}
                         />
                     </div>
@@ -66,7 +66,7 @@ export const LoginUsersMobile = () => {
 
                 <button onClick={goToRegister}>¿Nuevo por aquí? <span className="text-[#D9822B] font-bold ">¡Registrate, es gratis!</span></button>
 
-                <Toaster position="top-center" reverseOrder={false} />
+                
             </form>
         </section>
     )
