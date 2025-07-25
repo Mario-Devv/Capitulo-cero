@@ -16,9 +16,9 @@ POST http://localhost:3000/users/login
 Content-Type: application/json
 
 {
-    "email": "mariano@hotmail.com",
-    "username": "mariano",
-    "password": "123456789"    
+    "email": "mariano@hotmail.es",
+    "username": "Mario",
+    "password": "PeterPan111"    
 }
 
 ### Update user
@@ -37,4 +37,17 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWQxYWNmY
 
 {
     "email": "lolitoFdf@hotmail.com"
+}
+
+#### Create Book
+POST http://localhost:3000/users/books
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ODM0ZTYzZmVlYWVjZjgzYjRlZDFjZCIsImlhdCI6MTc1MzQzNTc2NSwiZXhwIjoxNzUzNDM5MzY1fQ.BpYdYYldCSYKFb7kW174Mf501LabU2lOjf1PC-wbUno
+
+{
+    "title": "El Señor de los Anillos",
+    "auth": "J.R.R. Tolkien",
+    "category": "Fantasía",
+    "editorial": "Minotauro",
+    "publishDate": "1954-07-29"
 }
