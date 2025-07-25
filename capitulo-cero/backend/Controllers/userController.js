@@ -3,7 +3,7 @@ import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 
 export class userController {
-  static async getAllUser(req, res) {
+  static async getAllUser (req, res) {
     try {
       // const { password } = req.body
       const users = await UserModel.find()
@@ -21,7 +21,7 @@ export class userController {
     }
   }
 
-  static async mongoCreateUser(req, res) {
+  static async mongoCreateUser (req, res) {
     try {
       const { email, username, password } = req.body
 
@@ -52,7 +52,7 @@ export class userController {
     }
   }
 
-  static async login(req, res) {
+  static async login (req, res) {
     try {
       const { email, password } = req.body
 
@@ -91,7 +91,7 @@ export class userController {
     }
   }
 
-  static async updateUser(req, res) {
+  static async updateUser (req, res) {
     try {
       const { username, email } = req.body
 
@@ -111,7 +111,7 @@ export class userController {
     }
   }
 
-  static async deleteUser(req, res) {
+  static async deleteUser (req, res) {
     try {
       const user = await UserModel.findByIdAndDelete(req.userId)
 
