@@ -3,6 +3,7 @@ import { userController } from '../Controllers/userController.js'
 import { validateSchema } from '../middlewares/validateSchema.js'
 import { verifyToken } from '../middlewares/auth.js'
 import { bookController } from '../Controllers/bookController.js'
+import { upload } from '../middlewares/Uploads.js'
 
 export const userRouter = Router()
 
@@ -15,4 +16,5 @@ userRouter.patch('/me', verifyToken, userController.updateUser)
 userRouter.delete('/me', verifyToken, userController.deleteUser)
 
 // BOOKS
-userRouter.post('/books', verifyToken, bookController.addBook)
+userRouter.post('/books', upload.single('image'), verifyToken, bookController.addBook)
+userRouter.get('/books/search', bookController.getBooks)

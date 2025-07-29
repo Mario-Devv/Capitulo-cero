@@ -6,7 +6,8 @@ const bookSchema = new mongoose.Schema({
   category: { type: mongoose.Schema.Types.ObjectId, ref: 'Category', required: true },
   editorial: { type: String },
   publishDate: { type: Date },
-  createdBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true }
+  createdBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+  image: { type: String, required: true }
 })
 
 export const BookModel = mongoose.model('Book', bookSchema)
