@@ -14,6 +14,8 @@ export class bookController {
 
     const userID = req.user.id
 
+    const image = req.file ? `/uploads/${req.file.filename}` : null
+
     try {
       const newBook = new BookModel({
         title,
@@ -21,7 +23,8 @@ export class bookController {
         category: checkCategory._id,
         editorial,
         publishDate,
-        createdBy: userID
+        createdBy: userID,
+        image
       })
 
       await newBook.save()
@@ -36,13 +39,14 @@ export class bookController {
 
   static async getBooks(req, res) {
     const { title } = req.query
+
     try {
       const books = await BookModel.find({
         title: { $regex: title, $options: 'i' }
       })
 
       if (!books.length) {
-        return res.status(404).json({ message: 'No books found' })
+        return res.status(404).json({ message: 'No se ha encontrado el libro que búscas, por favor intenta con otro título' })
       }
 
       res.status(200).json(books)
