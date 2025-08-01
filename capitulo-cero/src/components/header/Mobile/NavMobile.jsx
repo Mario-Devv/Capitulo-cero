@@ -1,15 +1,51 @@
 import { useNavigate } from "react-router-dom";
 import { BurgerBTN, CloseBTN, Lupa } from "../../../assets/icons/header"
+import { useState } from "react";
+import toast from "react-hot-toast"
+import { BooksMobile } from "../../Books/mobile/Books";
+
 
 export const NavMobile = ({ isOpen, setIsOpen }) => {
     const navigate = useNavigate()
 
     const QueryBooks = () => {
+        const [search, setSearch] = useState('');
+        const handleSearchBooks = (e) => {
+            e.preventDefault();
+
+            const query = async () => {
+                const response = await fetch(`http://localhost:3000/users/books/search?title=${search}`)
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    toast.error(data.message);
+                    return;
+                }
+
+                if (response.ok) {
+                    navigate('/books', { state: data })
+                }
+            }
+
+            query();
+        }
+
         return (
-            <div className='w-full sm:w-1/4 h-10 rounded-2xl flex items-center  sm:text-sm'>
-                <img src={Lupa} alt="Lupa" className='absolute pl-2' />
-                <input type="text" placeholder="Buscar libros..." className="border border-gray-300 px-8 py-1 w-full rounded-2xl h-full bg-[#F3E8DD]" />
-            </div>
+            <form onSubmit={handleSearchBooks}
+
+                className='w-full relative sm:w-1/4 h-10 rounded-2xl flex items-center  sm:text-sm'>
+                <img src={Lupa} alt="Lupa" className='absolute pl-2 left-0' />
+
+                <input type="text" placeholder="Buscar libros..."
+                    className="border border-gray-300 px-8 py-1 w-full rounded-2xl h-full bg-[#F3E8DD]"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                />
+
+                <button type="submit">Buscar</button>
+
+            </form>
         )
     }
 
@@ -18,7 +54,7 @@ export const NavMobile = ({ isOpen, setIsOpen }) => {
     };
 
     const closeMenu = () => {
-        setIsOpen(!isOpen);
+        setIsOpen(false);
     }
 
     const ToggleBurger = () => {
@@ -38,7 +74,7 @@ export const NavMobile = ({ isOpen, setIsOpen }) => {
         )
     }
 
-    const goToLogin = () => { 
+    const goToLogin = () => {
         navigate('/login')
     }
 
