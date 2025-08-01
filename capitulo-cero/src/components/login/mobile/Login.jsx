@@ -16,10 +16,10 @@ export const LoginUsersMobile = () => {
 
     const { login } = useLogin()
 
-    const handleSubmit = async (e) => { 
+    const handleSubmit = async (e) => {
         e.preventDefault()
 
-        await login (email, password)
+        await login(email, password)
     }
 
 
@@ -66,7 +66,7 @@ export const LoginUsersMobile = () => {
 
                 <button onClick={goToRegister}>¿Nuevo por aquí? <span className="text-[#D9822B] font-bold ">¡Registrate, es gratis!</span></button>
 
-                
+
             </form>
         </section>
     )

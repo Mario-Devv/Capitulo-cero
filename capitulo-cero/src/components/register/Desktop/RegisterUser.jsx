@@ -18,7 +18,7 @@ export const RegisterUserDesktop = () => {
 
 
     return (
-        <section className=" bg-[#FFF8F0] w-full h-dvh flex flex-col justify-center items-center">
+        <section className="hidden bg-[#FFF8F0] w-full h-dvh sm:flex flex-col justify-center items-center">
             <form onSubmit={handleSubmit} className="bg-[#F3E8DD] p-5 grid grid-cols-2 w-[80%] h-[90%] flex-col rounded-sm justify-center border" action="">
                 <section className="w-full flex flex-col justify-center  items-center mb-6">
                     <img className="w-22" src={Book} alt='Libro' />
