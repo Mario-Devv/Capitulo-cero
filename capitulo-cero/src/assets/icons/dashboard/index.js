@@ -7,5 +7,6 @@ import Search from './Search.svg'
 import Book from './Book.svg'
 import Clock from './Clock.svg'
 import WhiteBook from './WhiteBook.svg'
+import Oclock from './orange_clock.svg'
 
-export { Bell, Star, StarReview, Upp, Add, Search, Book, Clock, WhiteBook }
+export { Bell, Star, StarReview, Upp, Add, Search, Book, Clock, WhiteBook, Oclock }
