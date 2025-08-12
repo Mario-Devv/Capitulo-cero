@@ -11,21 +11,24 @@ export const ReadGoalsMobile = () => {
         const percentage = (value / maximo) * 100;
 
         return (
-            <>
-                <CircularProgressbar
-                    value={percentage}
-                    text={`${value} de ${maximo}`}
-                    styles={buildStyles({
-                        pathColor: '#D9822B',
-                        textColor: '#3E2F1C',
-                        trailColor: '#F3E8DD',
-                        backgroundColor: '#3E2F1C',
-                        textSize: '12px'
-                    })}
-                />
+            <div className="flex flex-col justify-center items-center gap-2">
+                <div className="w-40">
+                    <CircularProgressbar
+                        value={value}
+                        text={`${value} de ${maximo}`}
+                        styles={buildStyles({
+                            pathColor: '#D9822B',
+                            textColor: '#3E2F1C',
+                            trailColor: '#F3E8DD',
+                            backgroundColor: '#3E2F1C',
+                            textSize: '12px',
+
+                        })}
+                    />
+                </div>
                 <p>Has completado el <span>{percentage.toFixed(0)}%</span> de tu meta anual</p>
 
-            </>
+            </div>
 
         )
     }
